@@ -1,0 +1,7 @@
+output
+tmp
+.bundle
+.DS_Store
+crash.log
+.sass-cache
+vendor/local

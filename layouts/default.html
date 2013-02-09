@@ -1,0 +1,11 @@
+!!!html
+%head
+  %meta{:charset => "utf-8"}
+  %meta{:name => "generator", :content => "nanoc 3.1.6"}
+  %title
+    A Brand New nanoc Site - 
+    = @item[:title]
+  %link{:href => "/style.css", :rel => "stylesheet"}
+  %body
+    #main
+      = yield
