@@ -1,0 +1,15 @@
+source :rubygems
+
+gem 'nanoc'
+gem 'kramdown'
+gem 'jsmin'
+gem 'rainpress'
+gem 'builder'
+gem 'rack'
+gem 'adsf'
+gem 'nanoc-cachebuster'
+gem 'sass', '3.2.1'
+gem 'haml'
+gem 'mime-types'
+gem 'shotgun'
+gem 'fssm'

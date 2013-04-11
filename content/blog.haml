@@ -1,0 +1,60 @@
+.wrapper.hiding#header
+  .container
+    .row
+      .span12
+        %ul
+          %a{:href => "/about/"}
+            %li about
+          %a{:href => "/design/"}
+            %li design
+          %a{:href => "/"}
+            %li ' '
+          %a{:href => "/blog/"}
+            %li blog
+          %a{:href => 'mailto:jennifer.friedmann@yale.edu'}
+            %li contact
+  %a#to_home{:href => "/"}
+    %img#logo{:src => "/images/logo.png"}
+
+.wrapper.subheader#blog-links
+  .container
+    .row
+      .span12
+        %ul
+          %a{:href => "/blog/#0"}
+            %li recent
+          %a{:href => "http://thefrenchconcession.tumblr.com"}
+            %li shanghai
+          %a{:href => "/"}
+            %li " "
+          %a{:href => "http://jfriedmann.tumblr.com"}
+            %li paris
+          %a{:href => "http://withthearidplainbehindme.wordpress.com/"}
+            %li xiamen
+
+.wrapper#arrows
+  .container
+    .row
+      .span1
+        %a#left
+          %img{:src => "/images/left.png"}
+      .span1.offset10
+        %a#right
+          %img{:src => "/images/right.png"}
+
+.wrapper#blog
+  - sorted_articles.each_with_index do |post, i|
+    .contentbox{:id => i, "data-pic" => post[:image_id], "data-no" => post[:image_no], "data-kind" => post[:kind]}
+      .container
+        .row
+          .span5.offset1
+            .box.post
+              %h1= post[:title]
+              %aside
+                Posted at:
+                = get_pretty_date(post)
+              %article
+                = get_post_start(post)
+
+
+

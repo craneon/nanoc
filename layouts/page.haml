@@ -1,0 +1,49 @@
+!!!html
+%head
+  %meta{ :charset => "utf-8"}
+  %meta{:name => "generator", :content => "nanoc 3.1.6"}
+  %meta{ "http-equiv" => "X-UA-Compatible", :content => "IE=edge,chrome=1" }
+  %meta{ :name => "language", :content => "en"}
+  %title Jennifer Friedmann
+  %meta{ :name => "author", :content => "Jennifer Friedmann" }
+  %meta{ :name => "description", :content => "Portfolio of Jennifer Friedmann" }
+  %meta{:name => "viewport", :content=> "width=device-width; initial-scale=1.0; maximum-scale=1.0;" }
+  %link{:href =>"http://fonts.googleapis.com/css?family=Oswald:400,700,300", :rel=>"stylesheet", :type=>"text/css"}
+  %link{:href =>"http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700", :rel=>"stylesheet", :type=>"text/css"}
+  %link{:href =>"http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic,700,700italic", :rel=>"stylesheet", :type=>"text/css"}
+  %link{:href => "/assets/bootstrap.css", :rel => "stylesheet"}
+  %link{:href => "/assets/stylesheet.css", :rel => "stylesheet"}
+%body
+  = yield
+
+  .wrapper#footer
+    .container
+      .row
+        .span12
+          %ul
+            %a{:href => "http://lnkd.in/-eVZGH"}
+              %li
+                %img{:src => "/images/icons/linkedin.png"}
+            %a{:href => "http://facebook.com/jennifer.friedmann"}
+              %li
+                %img{:src => "/images/icons/facebook.png"}
+            %a{:href => "http://www.goodreads.com/jenniferfriedmann"}
+              %li
+                %img{:src => "/images/icons/goodreads.png"}
+            %a{:href => "https://github.com/craneon"}
+              %li
+                %img{:src => "/images/icons/github.png"}
+            %a{:href => "http://instagram.com/craneon"}
+              %li
+                %img{:src => "/images/icons/instagram.png"}
+            %a{:href => "http://twitter.com/friedmannj"}
+              %li
+                %img{:src => "/images/icons/twitter.png"}
+
+  %script{ :src => "//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.js" }
+  :javascript
+    window.jQuery || document.write("<script src='assets/js/jquery-1.8.3.min.js'>\x3C/script>")
+  %script{ :src => "//cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.3/jquery.backstretch.min.js" }
+      
+  %script{ :src => "/assets/js/plugins.js" }
+  %script{ :src => "/assets/js/main.js" }

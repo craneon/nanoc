@@ -1,11 +1,25 @@
-!!!html
-%head
-  %meta{:charset => "utf-8"}
-  %meta{:name => "generator", :content => "nanoc 3.1.6"}
-  %title
-    A Brand New nanoc Site - 
-    = @item[:title]
-  %link{:href => "/style.css", :rel => "stylesheet"}
-  %body
-    #main
-      = yield
+= render "page" do
+  .wrapper#header.default
+    .container
+      .row
+        .span12
+          %ul
+            %a{:href => "/about/"}
+              %li about
+            %a{:href => "/design/"}
+              %li design
+            %a{:href => "/"}
+              %li ' '
+            %a{:href => "/blog/"}
+              %li blog
+            %a{:href => 'mailto:jennifer.friedmann@yale.edu', :target => '_blank'}
+              %li contact
+    %a#logo{:href => "/"}
+      %img{:src => "/images/logo.png"}
+
+  .wrapper#page
+    =yield
+    
+    .container#quote
+      .row.center
+        %h4"The enemy of art is the absence of limitations." - O. Wells 

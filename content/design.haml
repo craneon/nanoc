@@ -1,0 +1,61 @@
+.wrapper.hiding#header
+  .container
+    .row
+      .span12
+        %ul
+          %a{:href => "/about/"}
+            %li about
+          %a{:href => "/design/"}
+            %li design
+          %a{:href => "/"}
+            %li ' '
+          %a{:href => "/blog/"}
+            %li blog
+          %a{:href => 'mailto:jennifer.friedmann@yale.edu'}
+            %li contact
+  %a#to_home{:href => "/"}
+    %img#logo{:src => "/images/logo.png"}
+
+.wrapper.subheader#design-links
+  .container
+    .row
+      .span12
+        %ul
+          %a{:href => "/design/#0"}
+            %li tea
+          %a{:href => "/design/#1"}
+            %li sustainability
+          %a{:href => "/design/#2"}
+            %li posters
+          %a{:href => "/"}
+            %li " "
+          %a{:href => "/design/#3"}
+            %li poles apart
+          %a{:href => "/design/#4"}
+            %li dwight hall
+          %a{:href => "/design/#5"}
+            %li occupy nh
+
+.wrapper#arrows
+  .container
+    .row
+      .span1
+        %a#left
+          %img{:src => "/images/left.png"}
+      .span1.offset10
+        %a#right
+          %img{:src => "/images/right.png"}
+
+.wrapper#portfolio
+  - sorted_portfolios.each_with_index do |portfolio, i|
+    .contentbox{:id => i, "data-pic" => portfolio[:image_id], "data-no" => portfolio[:image_no], "data-kind" => portfolio[:kind]}
+      .container
+        .row
+          .span4.offset1
+            .box
+              %h2= portfolio[:title]
+              %p= portfolio[:content]
+
+
+
+

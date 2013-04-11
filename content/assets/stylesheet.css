@@ -1,0 +1,250 @@
+html, body {
+  height: 100%;
+}
+
+/*Header*/
+
+#header {
+  background-color: #d8563a;
+  padding-top: 65px;
+  height: 90px;
+  -moz-box-shadow: 0px 2px 10px #adadad; 
+  -webkit-box-shadow: 0px 2px 10px #adadad;
+  box-shadow: 0px 2px 10px #adadad;
+  position: relative;
+  z-index: 2;
+}
+
+#header a {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+#header a:link, #header a:visited {
+  color: #8e3624;
+}
+
+#header a:hover, #header a:active {
+  color: #ffffff;
+}
+
+#header.hiding {
+  width: 100%;
+  position: fixed;
+  margin-top: 0px;
+}
+
+#header ul, .subheader ul, #footer ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+#header li, .subheader li, #footer li {
+  float: left;
+  list-style-type: none;
+  display: block;
+  width: 20%;
+  text-align: center;
+}
+
+#to_home {
+  display: block;
+  margin: auto;
+  width: 200px;
+}
+
+#logo {
+  margin: auto;
+  margin-top: -80px;
+  display: block;
+  width: 200px;
+}
+
+#logo img {
+  display: block;
+}
+
+
+/*Second Header*/
+
+.subheader {
+  background-color: #dedede;
+  padding-top: 10px;
+  height: 25px;
+  width: 100%;
+  -moz-box-shadow: 0px 2px 2px #c6c6c6; 
+  -webkit-box-shadow: 0px 2px 2px #c6c6c6;
+  box-shadow: 0px 2px 2px #c6c6c6;
+  position: fixed;
+}
+
+.subheader a {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  z-index: 5;
+}
+
+.subheader a:link, .subheader a:visited {
+  color: #b0b0b0;
+}
+
+.subheader a:hover, .subheader a:active {
+  color: #ffffff;
+}
+
+#design-links li {
+  width: 14.25%;
+}
+
+#blog-links li {
+  width: 20%;
+}
+
+
+/*Basic Page Structure*/
+
+#page {
+  background-image: url('/images/graph.jpg');
+  background-color: #ffffff;
+  font: 400 16px/24px "Gentium Book Basic";
+  min-height: 100%;
+  z-index: -2;
+}
+
+#page a {
+  text-decoration: none;
+  color: #888;
+}
+
+.box{
+  background-color: rgba(222, 222, 222, 0.8);
+  padding: 1px 15px;
+  margin-bottom: 20px;
+}
+
+.center{
+  display: block;
+  text-align: center;
+}
+
+#quote {
+  margin-top: 100px;
+  margin-bottom: 0px;
+}
+
+#footer {
+    background-color: #dedede;
+    padding: 5px 0px;
+    -moz-box-shadow: 0px -2px 10px #adadad;
+    -webkit-box-shadow: 0px -2px 10px #adadad;
+    box-shadow: 0px -2px 10px #adadad;
+}
+
+#footer img {
+  height: 70px;
+}
+
+#footer li {
+  width: 16%;
+}
+
+/*Content Styling*/
+
+h1, h2, h3 {
+  color: #d8563a;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+#about h1 {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #aaa;
+}
+
+h4 {
+  color: #d8563a;
+  font: 400 36px "Gentium Book Basic";
+  font-style: italic;
+}
+
+
+/* Image Styling*/
+
+.index {
+  width: 90%;
+  margin: auto;
+  display: block;
+}
+
+.profile {
+  display: block;
+  margin: auto;
+  width: 97%;
+  border: 7px solid #dedede;
+}
+
+.plus {
+  position:relative;
+  left:310px;
+  cursor:pointer;
+  cursor:hand;
+  height: 47px;
+  width: 44px;
+  display: block;
+  background-image: url('/images/plus.png');
+}
+
+.minus {
+  position:relative;
+  left: 548px;
+  cursor:pointer;
+  cursor:hand;
+  height: 33px;
+  width: 56px;
+  display: block;
+  background-image: url('/images/minus.png');
+}
+
+/*Portfolio & Blog Structure*/
+
+#portfolio, #blog {
+  margin-top: 200px;
+  font: 400 14px/20px "Gentium Book Basic";
+  /*font-family: 400 12px "PT Sans Narrow";*/
+}
+
+.contentbox {
+  height: 800px;
+  max-height: 100%;
+}
+
+#left, #right {
+  margin-top: 100px;
+  position: fixed;
+  z-index: 100;
+  cursor:pointer;
+  cursor:hand;
+}
+
+/* Blog Styling*/
+
+.post aside {
+  color: #888;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #aaa;
+}
+.post article {
+  margin: 10px 0 0 0;
+  font: 400 14px/20px "Gentium Book Basic";
+}
+
+.read_more {
+  display: none;
+}
