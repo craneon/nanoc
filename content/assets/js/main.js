@@ -15,14 +15,14 @@ $(".hiding").mouseleave (function() {
 $(".plus").click(function(){
 	$(this).css({display: 'none'});
 	$(this).next().css({display: 'block'});
-	$(this).parents().eq(2).removeClass('span5').addClass('span8');
+	$(this).parents().eq(2).removeClass('span5').addClass('span10');
 
 })
 
 $(".minus").click(function(){
 	$(this).parent().css({display: 'none'});
 	$(this).parent().prev().css({display: 'block'});
-	$(this).parents().eq(3).removeClass('span8').addClass('span5');
+	$(this).parents().eq(3).removeClass('span10').addClass('span5');
 
 })
 

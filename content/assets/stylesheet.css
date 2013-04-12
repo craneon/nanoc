@@ -203,7 +203,7 @@ h4 {
 
 .minus {
   position:relative;
-  left: 548px;
+  left: 700px;
   cursor:pointer;
   cursor:hand;
   height: 33px;
@@ -234,6 +234,11 @@ h4 {
 }
 
 /* Blog Styling*/
+
+.post {
+  max-height: 600px;
+  overflow: scroll;
+}
 
 .post aside {
   color: #888;
