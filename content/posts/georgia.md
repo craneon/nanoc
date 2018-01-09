@@ -6,7 +6,7 @@ image_id: georgia
 image_no: 3
 ---
 
-We stand at the edge of the world, overlooking lunar hills striped with rust and tan. Azerbaijan unfolds beneath us, a March desert empty but for a flock of sheep and the border patrol station. Fortunately, we encounter no Azeri patrols as we test the unmarked border. 
+We stand at the edge of the world, overlooking lunar hills striped with rust and tan. Azerbaijan unfolds outwards, a March desert empty but for a flock of sheep and the border patrol station. Fortunately, we encounter no Azeri patrols as we test the unmarked border. 
 
 <!-- more -->
 

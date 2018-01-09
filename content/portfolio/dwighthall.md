@@ -1,6 +1,6 @@
 ---
 title: Dwight Hall PR Coordinator
-rank: 3
+rank: 4
 kind: portfolio
 image_id: dwighthall
 image_no: 3

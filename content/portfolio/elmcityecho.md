@@ -1,6 +1,6 @@
 ---
 title: Elm City Echo
-rank: 2
+rank: 3
 kind: portfolio
 image_id: elmcity
 image_no: 3

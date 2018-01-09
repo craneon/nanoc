@@ -9,13 +9,13 @@
             %a{:href => "/design/"}
               %li design
             %a{:href => "/"}
-              %li ' '
+              %img#logo{:src => "/images/logo.png"}
+              %li
             %a{:href => "/blog/"}
               %li blog
-            %a{:href => 'mailto:jennifer.friedmann@yale.edu', :target => '_blank'}
+            %a{:href => 'mailto:jennifer.friedmann@gmail.com', :target => '_blank'}
               %li contact
-    %a#logo{:href => "/"}
-      %img{:src => "/images/logo.png"}
+
 
   .wrapper#page
     =yield

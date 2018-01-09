@@ -57,13 +57,11 @@ html, body {
 }
 
 #logo {
-  margin: auto;
-  margin-top: -80px;
-  display: block;
-  width: 200px;
-}
-
-#logo img {
+  width: 180px;
+  float:left;
+  margin-top: -55px;
+  padding:0px;
+  margin-bottom:10px;
   display: block;
 }
 
@@ -161,6 +159,10 @@ h1, h2, h3 {
   font-family: 'PT Sans Narrow', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+h1 {
+  line-height: 100%;
 }
 
 #about h1 {
